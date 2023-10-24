@@ -31,16 +31,16 @@ Execute o comando abaixo para instalar as dependências do projeto:
   
 1. Gere uma chave de aplicativo executando o seguinte comando:
    
-        **php artisan key:generate**
+        php artisan key:generate
 
 2. Gere a chave secreta JWT (Json Web Token) usando o seguinte comando:
 
-        **php artisan jwt:secret**
+        php artisan jwt:secret
   
 ## TESTE LOCAL
 
 Para iniciar o servidor localmente, execute o seguinte comando:
 
-    **php -S 127.0.0.1:8000 -t public**
+    php -S 127.0.0.1:8000 -t public
 
 Isso iniciará o servidor e permitirá que você teste a aplicação localmente no endereço http://127.0.0.1:8000.
