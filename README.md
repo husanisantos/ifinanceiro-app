@@ -1,26 +1,46 @@
-# Lumen PHP Framework
+# Readme do Servidor Backend
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
+Este repositório contém o servidor backend para um aplicativo web. Certifique-se de atender aos requisitos do servidor backend antes de prosseguir com a configuração.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Requisitos do Servidor Backend
 
-> **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com).
+Certifique-se de que seu servidor atenda aos seguintes requisitos:
 
-## Official Documentation
+- [Composer](https://getcomposer.org/)
+- [PHP 8.2](https://www.php.net/)
+- Sistema de Gerenciamento de Banco de Dados (SGBD):
+  - MySQL
+  - Postgres
+  - Ou outro semelhante
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+## Pré-configuração
 
-## Contributing
+Antes de executar o servidor, você precisará fazer algumas configurações iniciais.
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Renomeie o arquivo `.env-example` para `.env`.
 
-## Security Vulnerabilities
+2. Abra o arquivo `.env` e adicione as informações de configuração do banco de dados, garantindo que ele esteja corretamente configurado para o SGBD escolhido.
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+3. Acesse o diretório "database/seeders" e renomeie o arquivo "UsersTableSeeder.example.php" para "UsersTableSeeder.php".
 
-## License
+## Instalação
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Agora, você pode prosseguir com a instalação do servidor backend:
+
+Execute o comando abaixo para instalar as dependências do projeto:
+  
+1. Gere uma chave de aplicativo executando o seguinte comando:
+   
+**php artisan key:generate**
+
+2. Gere a chave secreta JWT (Json Web Token) usando o seguinte comando:
+
+**php artisan jwt:secret**
+  
+## TESTE LOCAL
+
+Para iniciar o servidor localmente, execute o seguinte comando:
+
+ **php -S 127.0.0.1:8000 -t public**
+
+Isso iniciará o servidor e permitirá que você teste a aplicação localmente no endereço http://127.0.0.1:8000.
