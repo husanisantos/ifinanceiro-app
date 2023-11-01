@@ -46,7 +46,7 @@ Para cada API do back-end, deve ser criada uma função correspondente no front-
 
 | Aspecto                                      | Pontuação |
 | -------------------------------------------- | --------- |
-| Tempo de Apresentação (até 15 minutos)      | -         |
+| Tempo de Apresentação (até 15 minutos)      |           |
 | Tempo Excedido (por minuto extra)           | -0,2      |
 | Vestimenta Inapropriada (chinelo, bermuda, camiseta cavada) | -3,0 |
 
